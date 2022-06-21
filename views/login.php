@@ -1,13 +1,13 @@
     <?php
     
+    session_start();
+
 
      require_once '../Controllers/login-controller.php';
     
-    
-    
     ?>
 
-
+    <!-- On inclut le header contenant le cdn, title, doctype -->
     <?php include 'elements/header.php'?>
 
 <body>

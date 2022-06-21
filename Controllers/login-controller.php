@@ -1,16 +1,15 @@
 <?php
-session_start();
-
-
 
 
 $login = "Pierre";
 
+//nous stockons notre mot de passe hashé dans une variable.
 $passwordHash = '$2y$10$QEXXCYsLRUnKko7vDElYteosi4T5ZTOtIQo6rBWnmlK5hKlgU0pIK';
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
+    //tableau d'erreurs vide
     $errors = [];
 
     if (isset($_POST['firstname'])) {
@@ -31,6 +30,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 
+
+
+    //Si tout est ok, cas le tableau d'erreurs est vide alors...
     if (count($errors) == 0) {
         $_SESSION['user'] = [
             'lastname' => 'Coco',
