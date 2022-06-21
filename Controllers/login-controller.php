@@ -1,9 +1,12 @@
 <?php
+session_start();
+
+
+
 
 $login = "Pierre";
 
 $passwordHash = '$2y$10$QEXXCYsLRUnKko7vDElYteosi4T5ZTOtIQo6rBWnmlK5hKlgU0pIK';
-
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -22,12 +25,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['password'])) {
 
         if ($_POST['password'] == '') {
-            $errors['password'] = 'Erreur de mot de passe';
+            $errors['password'] = 'Champ obligatoire';
         } else if (!password_verify($_POST['password'], $passwordHash)) {
             $errors['password'] = "Mot de passe incorrect";
-        } else {
-            header('Location: ../views/dashboard.php');
-            exit;
         }
     }
+
+    if (count($errors) == 0) {
+        $_SESSION['user'] = [
+            'lastname' => 'Coco',
+            'firstname' => 'Bob',
+            'role' => 1
+        ];
+
+        header('Location: ../views/dashboard.php');
+        
+    };
 }
