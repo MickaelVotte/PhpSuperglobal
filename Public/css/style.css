@@ -1,0 +1,13 @@
+.polynesie{
+    background: url("../img/Polynesie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+
+.photocss{
+    width: 7rem;
+    height: 100%;
+}

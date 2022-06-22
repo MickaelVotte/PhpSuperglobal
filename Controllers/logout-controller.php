@@ -5,7 +5,7 @@
 session_unset();
 
 
-//permet de supprimer les sessions  de l'utilissateur
+//permet de supprimer les sessions  de l'utilissateur 
 session_destroy();
 
 ?>
