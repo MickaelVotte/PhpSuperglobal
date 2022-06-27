@@ -22,8 +22,11 @@ require_once'../Controllers/dashboard-controller.php';
     
 
 
+<div class="row text-center m-5">
 
-    <a href="../views/logout.php">Deconnexion</a>
+      <a href="../views/logout.php">Deconnexion</a>
 
+</div>
+  
 </body>
 </html>

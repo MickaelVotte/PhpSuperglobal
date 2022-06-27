@@ -10,10 +10,10 @@
     <!-- On inclut le header contenant le cdn, title, doctype -->
     <?php include 'elements/header.php'?>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <div class="row text-center m-0 p-0 pt-5">
-        <h1>formulaire de contact</h1>
+        <h1>Connexion</h1>
     </div>
 
     <form action="" method="POST">
@@ -37,7 +37,7 @@
                     <button class="btn btn-success">Valider</button>
                 </div>
 
-
+                <a href="../views/home.php">retour à l'acceuil</a>
             </div>
 
         </div>
@@ -52,9 +52,8 @@
 
 
 
-
+    <?php include('../views/footer.php') ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
-</html>

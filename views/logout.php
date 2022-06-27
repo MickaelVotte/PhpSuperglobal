@@ -15,16 +15,24 @@ require_once'../Controllers/logout-controller.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperGolobal Supprimer Session </title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     
-<h1>Deconnexion</h1>
+<h1 class="text-center">Deconnexion</h1>
 
-<h2>Vous avez bien été deconnecté</h2>
-
-
+<h2 class="text-center m-5">Vous avez bien été deconnecté</h2>
 
 
-<a href="../Views/login.php">page de connexion</a>
+
+<div class="row text-center m-0 p-0">
+    
+    <a href="../views/home.php">retour à l'acceuil</a>
+
+</div>
+
+
+
+
+<?php include('../views/footer.php') ?>
 
 </body>
 </html>

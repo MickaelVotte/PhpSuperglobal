@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             'role' => 1
         ];
 
-        header('Location: ../views/dashboard.php');
+        header('Location: ../views/home.php');
         
     };
 }
